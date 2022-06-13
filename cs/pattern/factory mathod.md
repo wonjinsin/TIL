@@ -17,7 +17,7 @@ class ComputerStore {
 		if($type == "gram") { // 이짓을 다른 instance가 처리하도록해서 결합도를 낮추기 위해 하는거
 			$this->computer = new Gram();
 		} else if($type == "mac") {
-			$this->gram = new Mac();
+			$this->computer = new Mac();
 		}
 	}
 
