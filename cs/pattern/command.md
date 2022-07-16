@@ -126,4 +126,4 @@ $okGoogle->setCommand($lampCommand);
 $okGoogle->talk();
 ```
 
-참고: https://dailyheumsi.tistory.com/198
+참고: https://victorydntmd.tistory.com/295
