@@ -18,4 +18,14 @@
 			SET PERSIST max_connection=5000; // Global 변수 수정과 mysqld-auto.cnf에도 기록됨
 			SET PERSIST_ONLY max_connection=5000; // mysqld-auto.cnf에만 기록됨 
 			```
-	
+
+- 3장. 사용자 및 권한
+	- 8.0 부터는 CREATE USER, 따로 GRANT를 이용한 권한 따로임
+	- 8.0 부터는 암호가 SHA-2로 바뀜
+
+- 4장. 아키텍처
+	- MYSQL은 SQL 문장을 분석하거나 최적화 하는 등 DBMS의 두뇌에 해당하는 MYSQL 엔진과 디스크 스토리지에 저장하거나 데이터를 읽어오는 스토리지 엔진(ex. INNO DB)으로 나뉘어짐
+	- MYSQL 서버는 프로세스 기반이 아니라 스레드 기반으로 작동
+	- INNO DB
+		- 스토리지 엔진중 거의 유일하게 레코드 기반의 잠금 제공(undo 레코드 이용)하여 높은 동시성 처리가 가능하고 안정적이며 성능이 뛰어짐
+		- MYISAM은 테이블 수준의 잠금이기 때문에 INNO DB의 동시성을 따라가지 못함 
