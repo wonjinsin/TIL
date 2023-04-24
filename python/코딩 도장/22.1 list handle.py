@@ -50,4 +50,6 @@ a[len(a):] = [500]  # [10, 20, 30, 500]
 
 seq = []
 if seq:        # 리스트에 내용이 있으면 True
+    pass
 if not seq:    # 리스트가 비어 있으면 True
+    pass
