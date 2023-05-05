@@ -11,6 +11,13 @@ for i in range(len(words) - 1):      # 2-gram이므로 리스트의 마지막에
 
 # zip 이용한 2gram
 text = 'hello'
+# ('h', 'e'), ('e', 'l'), ('l', 'l'), ('l', 'o')
 two_gram = zip(text, text[1:])
 for i in two_gram:
     print(i[0], i[1], sep='')
+
+# zip 이용한 단어단위 2gram
+text = 'this is python script'
+words = text.split()
+list(zip(words, words[1:]))
+[('this', 'is'), ('is', 'python'), ('python', 'script')]
