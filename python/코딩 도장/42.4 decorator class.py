@@ -2,7 +2,7 @@ class Trace:
     def __init__(self, func):    # 호출할 함수를 인스턴스의 초깃값으로 받음
         self.func = func         # 호출할 함수를 속성 func에 저장
 
-    def __call__(self):
+    def __call__(self):  # 인스턴스를 함수처럼 사용하게 해주는것
         print(self.func.__name__, '함수 시작')    # __name__으로 함수 이름 출력
         self.func()                               # 속성 func에 저장된 함수를 호출
         print(self.func.__name__, '함수 끝')
