@@ -1,7 +1,8 @@
 def sum_coroutine():
     total = 0
     while True:
-        x = (yield total)    # 코루틴 바깥에서 값을 받아오면서 바깥으로 값을 전달
+        # 코루틴 바깥에서 값을 받아오면서 바깥으로 값을 전달, send 값이 x로, 바깥으로 보낼값이 total
+        x = (yield total)
         total += x
 
 
