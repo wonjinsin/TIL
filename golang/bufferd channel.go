@@ -3,7 +3,7 @@ package main
 import "time"
 
 func main() {
-	unbuffered()
+	// unbuffered()
 	time.Sleep(100 * time.Millisecond)
 	buffered()
 }
