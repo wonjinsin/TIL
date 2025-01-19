@@ -47,7 +47,7 @@ func main() {
 	// ~0 = 1
 	// ~1 = 0
 	a = 5           // 0101
-	fmt.Println(^a) // -6, -0110
+	fmt.Println(^a) // -6, -1011
 
 	// <<연산(Left Shift)
 	// 비트를 왼쪽으로 이동
