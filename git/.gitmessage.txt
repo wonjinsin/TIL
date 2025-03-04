@@ -1,0 +1,28 @@
+##### Title - Summarize in 50 characters or less!
+
+### [Commit Type]: [Task Description]
+
+##### Body - Maximum 72 characters per line
+
+# 1. What was changed
+# 2. Why it was changed
+
+# Footer should be written below: ex) #Issue number
+
+#   [Commit Types] List
+#   feat      : Feature (New functionality)
+#   fix       : Bug (Bug fix)
+#   refactor  : Refactoring
+#   style     : Style (Code formatting, adding semicolons: no change in business logic)
+#   docs      : Documentation (Adding, modifying, or deleting documentation)
+#   test      : Test (Adding, modifying, or deleting test code: no change in business logic)
+#   chore     : Miscellaneous changes (e.g., build script modifications)
+#   post      : Blog post addition (New or modified posts)
+# ------------------
+#   [Checklist]
+#     Did you capitalize the first letter of the title?
+#     Is the title written in the imperative form?
+#     Did you avoid punctuation at the end of the title (period)?
+#     Did you separate the title and body with a line break?
+#     Did you separate multiple lines of messages with "-"?
+
