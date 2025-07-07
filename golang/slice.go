@@ -21,7 +21,7 @@ func main() {
 	bar = append(bar, 100)
 	fmt.Println("After appending foo is", foo) // 여기에서 foo의 [3]이 100으로 바뀌었음
 	fmt.Println("After appending bar is", bar)
-	fmt.Printf("After appending foo's length is %d, cap is %d\n", len(foo), cap(foo)) // 여기서는 length가 바뀌진 않지만, 겁나 신기하네
+	fmt.Printf("After appending foo's length is %d, cap is %d\n", len(foo), cap(foo)) // length는 같음, foo의 [3]이 바뀜
 	fmt.Printf("After appending bar's length is %d, cap is %d\n", len(bar), cap(bar))
 	fmt.Printf("After appending foo's address is %p\n", &foo[1])
 	fmt.Printf("After appending bar's address is %p\n\n", &bar[0])
@@ -30,6 +30,6 @@ func main() {
 	fmt.Println("After appending bar is", bar)
 	fmt.Println("After appending foo is", foo)
 	fmt.Printf("After appending foo's address is %p\n", &foo[1])
-	fmt.Printf("After appending bar's address is %p\n", &bar[0])
+	fmt.Printf("After appending bar's address is %p\n", &bar[0]) // 이렇게 되면 이제 bar가 새로운 주소로 새로운 슬라이스를 만들고 값을 복사
 
 }
