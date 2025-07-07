@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+	"io"
+	"os"
 	"sort"
 )
 
@@ -28,4 +30,7 @@ func main() {
 	}}
 	sort.Sort(s)
 	fmt.Println(s.s)
+
+	var t io.Writer
+	t = os.Stdout
 }
